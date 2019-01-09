@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1>todos</h1>
+        <div class="add">
+          <form action="javascript:void(0)">
+            <label for=""><a href="javascript:void(0)">></a></label>
+            <input type="text" placeholder="请输入" class="addText" />
+            <input type="submit" style="display:none" />
+          </form>
+        </div>
+        <div class="alllist"><ul></ul></div>
+        <div class="footer">
+          <ul>
+            <li class="count"><span>0</span>Item left</li>
+            <li class="filter">
+              <ul>
+                <li class="all active"><a href="javascript:void(0)">All</a></li>
+                <li class="uncomplete">
+                  <a href="javascript:void(0)">Active</a>
+                </li>
+                <li class="completed">
+                  <a href="javascript:void(0)">Completed</a>
+                </li>
+              </ul>
+            </li>
+            <li class="clear">
+              <a href="javascript:void(0)">Clear all complete</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>

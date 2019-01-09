@@ -1,0 +1,149 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration-line: none;
+  color: #000;
+}
+.container {
+  padding: 100px;
+  width: 520px;
+  background-color: #ccc;
+  margin: 100px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 1px rgb(0, 0, 0, 0.2);
+}
+.main {
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 15px 1px rgb(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+.main .add label {
+  font-family: serif;
+  margin: 5px;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 800;
+  color: #666;
+  transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+  opacity: 0.5;
+}
+.main .add label:hover {
+  opacity: 1;
+}
+.main .add input {
+  height: 40px;
+  width: 400px;
+  margin: 5px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  text-indent: 10px;
+}
+.alllist {
+  overflow: auto;
+  height: 260px;
+  transition: 0.5s ease;
+}
+.alllist label {
+  display: none;
+}
+.alllist ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  line-height: 30px;
+  padding: 10px 5px;
+  border-bottom: 1px solid #ddd;
+}
+.alllist ul li button {
+  width: 100px;
+  align-self: flex-end;
+  height: 32px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.alllist ul li:hover button {
+  opacity: 0.5;
+}
+.alllist ul li button:hover {
+  opacity: 1;
+}
+.alllist ul li input {
+  display: inline-block;
+  width: 39px;
+  height: 30px;
+  background-color: #fff;
+  color: green;
+  margin-right: 10px;
+}
+.alllist ul li span {
+  display: inline-block;
+  width: 100%;
+}
+.alllist ul .complete span {
+  opacity: 0.5;
+  text-decoration-line: line-through;
+  transition: 0.5s ease;
+}
+
+.footer > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 45px;
+  line-height: 30px;
+  margin: 0 10px;
+}
+.footer > ul > li {
+  font-size: 14px;
+  white-space: nowrap;
+  margin-top: 7px;
+}
+.footer .count span {
+  width: 30px;
+  margin: 0 5px;
+}
+.footer ul .filter {
+  width: 100%;
+}
+.footer ul .filter ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.footer ul .filter ul li {
+  padding: 0 5px;
+  margin-right: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.footer ul .filter ul li:hover {
+  border: 1px solid #ddd;
+}
+.footer ul .filter ul .active {
+  border: 1px solid #ddd;
+}
+.footer ul .filter ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer ul .clear {
+  padding: 0 5px;
+  margin-left: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 30px;
+}
+.footer ul .clear:hover {
+  border: 1px solid #ddd;
+}
