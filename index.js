@@ -121,7 +121,7 @@ function showLists(lists) {
   var allList = document.querySelector(".alllist ul");
   allList.innerHTML = ""; //清空页面数据
   for (var i = 0, len = lists.length; i < len; i++) {
-    item = lists[i].todo;
+    pageitem = lists[i].todo;
     index = lists[i].id;
     libox = document.createElement("li");
     if (lists[i].state === "complete") {
@@ -131,7 +131,7 @@ function showLists(lists) {
         "<label>" +
         index +
         '</label><input type="checkbox" checked/> <span>' +
-        item +
+        pageitem +
         "</span><button>删除</button>";
     } else {
       libox.classList.remove("complete");
@@ -139,7 +139,7 @@ function showLists(lists) {
         "<label>" +
         index +
         '</label><input type="checkbox"/> <span>' +
-        item +
+        pageitem +
         "</span><button>删除</button>";
     }
     allList.appendChild(libox);
