@@ -106,6 +106,7 @@ window.onload = function() {
       });
     }
     showLists(lists);
+    countTodo(lists);
   });
 };
 /**左下角数字 */
